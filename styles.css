@@ -1,0 +1,752 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Body Styling */
+  body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    background: #2b2727;
+  }
+  
+  /* Header */
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em;
+    background-color: #2c3e50;
+    color: rgba(239, 232, 232, 0.925);
+  }
+  .logo{
+    height: 50px;
+    width: 50px;
+
+  }
+  .modal2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 2em;
+
+  }
+  
+  .modal2 h2{
+    text-align: center;
+    margin-bottom: 1em;
+
+    
+  }
+  
+  .modal2 p{
+    text-align: center;
+
+  }
+  
+  @keyframes fadeInBackground {
+    0% {
+      background-color: #2b2727;
+    }
+    100% {
+      background-color: #2c3e50;
+    }
+  }
+  
+  .btn{
+    background-color: #3498db;
+    color: white;
+    padding: 1em 2em;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-bottom: 1em;
+    border-radius: 5px;
+    display: flex;
+  }
+  
+  header nav ul {
+    display: flex;
+    gap: 1em;
+  }
+  
+  header nav ul li {
+    list-style: none;
+  }
+  
+  header nav ul li a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  /* Hero Section */
+  .hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 70vh;
+    background: url("images/dark.jpg") no-repeat center center/cover;
+    background-size: cover;
+    color: hwb(0 96% 2%);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    animation: fadeInBackground 5s ease-in-out infinite;
+    transition: background-color 0.5s ease;
+    transition: color 0.5s ease;
+    animation: fadeInBackground 5s ease-in-out infinite;
+
+  }
+  .hero {
+    position: relative;
+    text-align: center;
+    background-color: #f0f8ff; /* Light blue background */
+    padding: 50px 0;
+  }
+  
+  .hero h1 {
+    font-size: 2.5em;
+    font-weight: bold;
+  }
+  
+  .hero h2 {
+    font-size: 2em;
+    animation: colorChange 2s infinite;
+  }
+  
+  .hero p {
+    font-size: 1.2em;
+    margin-top: 20px;
+  }
+  
+  @keyframes colorChange {
+    0% { color: red; }
+    25% { color: blue; }
+    50% { color: green; }
+    75% { color: orange; }
+    100% { color: red; }
+  }
+  
+  
+  /* Three Column Section */
+  .three-column-section {
+    display: flex;
+    justify-content: space-around;
+    padding: 2em;
+    background-color: #ecf0f1;
+    box-sizing: border-box;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    justify-content: space-between;
+  }
+  
+  .three-column-section .column {
+    width: 30%;
+    padding: 1em;
+    background-color: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+
+  }
+  /* Base styling for the section */
+.two-columns {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+}
+
+/* Styling for each column */
+.two-columns div {
+  flex: 1;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 8px;
+}
+
+/* Heading styling */
+.two-columns h2 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 16px;
+  border-bottom: 2px solid #e0e0e0;
+  padding-bottom: 8px;
+}
+
+/* List styling */
+.two-columns ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.two-columns li {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 10px;
+  line-height: 1.5;
+}
+
+/* Paragraph styling */
+.two-columns p {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 16px;
+}
+
+/* Button styling */
+#seeMoreBtn {
+  display: flexbox;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+#seeMoreBtn:hover {
+  background-color: #0056b3;
+}
+/* Base styling for the bookings column */
+.column.bookings {
+  width: 100%;
+  max-width: 400px;
+  background-color: #f8f9fa;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+}
+
+/* Heading styling */
+.column.bookings h3 {
+  font-size: 22px;
+  color: #333;
+  margin-bottom: 16px;
+  text-align: center;
+  border-bottom: 2px solid #e0e0e0;
+  padding-bottom: 8px;
+}
+
+/* Styling for individual items */
+.column.bookings .item {
+  background-color: #ffffff;
+  border-radius: 8px;
+  padding: 15px;
+  margin-bottom: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.column.bookings .item p {
+  margin: 5px 0;
+  font-size: 16px;
+  color: #555;
+}
+
+/* Add to Cart button */
+.column.bookings .item button {
+  padding: 8px 16px;
+  background-color: #007bff;
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+.column.bookings .item button:hover {
+  background-color: #0056b3;
+}
+
+/* Cart summary styling */
+.cart-summary {
+  background-color: #ffffff;
+  border-radius: 8px;
+  padding: 15px;
+  margin-top: 16px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.cart-summary h3 {
+  font-size: 20px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.cart-summary ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.cart-summary p {
+  font-size: 16px;
+  color: #555;
+}
+
+/* Payment section styling */
+.payment-section {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.payment-section label {
+  font-size: 16px;
+  color: #333;
+}
+
+.payment-section select {
+  margin-top: 8px;
+  padding: 8px;
+  font-size: 14px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+.payment-section button {
+  margin-top: 16px;
+  padding: 10px 20px;
+  background-color: #3f91ee;
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.payment-section button:hover {
+  background-color: #131514;
+}
+
+   footer .social-media a {
+    margin: 0 0.5em;
+    color: white;
+    text-decoration: none;
+  }
+  
+  footer .language-location {
+    margin-top: 1em;
+  }
+  
+  footer .language-location select,
+  footer .language-location p {
+    color: rgb(70, 28, 28);
+  }
+  
+  #pricingTable {
+    opacity: 0;
+    transition: opacity 0.5s ease;
+  }
+  
+  #pricingTable[style*="display: table"] {
+    opacity: 1;
+  }
+  /* Pricing Table Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .pricing-table {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .pricing-table h2 {
+    text-align: center;
+    color: #333;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  table th, table td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #ddd;
+  }
+  
+  table th {
+    background-color: #3498db;
+    color: white;
+  }
+  .social-media {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Space between icons */
+    margin-top: 20px;
+  }
+  
+  .social-media a {
+    text-decoration: none;
+    color: #333; /* Default color for icons */
+    font-size: 18px;
+    padding: 10px;
+    border-radius: 50%;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .social-media a:hover {
+    background-color: #007bff; /* Hover background color */
+    color: #fff; /* Hover text color */
+  }
+  .btn {
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #333; /* Blue background */
+    color: white; /* White text color */
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s; /* Smooth transition on hover */
+    text-decoration: none;
+}
+  .social-media a::before {
+    content: ""; /* Placeholder for icons */
+    margin-right: 8px;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  
+  
+  .social-media a[href*="facebook.com"]::before {
+    background-image: url("icons/bxl-facebook.svg"); 
+  }
+  
+  
+  
+  .social-media a[href*="instagram.com"]::before {
+    background-image: url("icons/bxl-instagram.svg"); 
+  }
+  
+  .social-media a[href*="linkedin.com"]::before {
+    background-image: url("icons/bxl-linkedin.svg"); 
+    }
+  
+  .social-media a[href*="youtube.com"]::before {
+    background-image: url("icons/bxl-youtube.svg"); 
+  }
+  
+  table tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  
+  table tr:hover {
+    background-color: #ddd;
+  }
+.contact-section{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 2em;
+  
+}
+
+
+
+
+
+
+/* Modal Styling */
+.modal2 {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  background-color: rgba(0, 0, 0, 0.4); /* Black background with opacity */
+  padding-top: 60px;
+}
+
+.modal2-content {
+  background-color: #fff;
+  margin: 5% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 50%; /* Modal width */
+  max-width: 500px;
+  box-sizing: border-box;
+}
+
+.close {
+  color: #aaa;
+  font-size: 28px;
+  font-weight: bold;
+  float: right;
+  cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Button Styles */
+button {
+  padding: 10px 20px;
+  margin: 10px 0;
+  background-color: #4CAF50; /* Green background */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+  display: flex;
+
+}
+
+button:hover {
+  background-color: green; /* Darker green on hover */
+}
+
+button:active {
+  background-color: black; /* Even darker when clicked */
+}
+
+button:focus {
+  outline: none; /* Remove focus outline */
+}
+
+/* Form Styling */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+form label {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+form input {
+  padding: 10px;
+  font-size: 14px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  margin-top: 5px;
+}
+
+form input:focus {
+  outline: none;
+  border-color: #4CAF50; /* Green border on focus */
+}
+
+/* Modal Header Styling */
+h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+h2.btn {
+  font-size: 30px;
+  color: #4CAF50; /* Green color for the Sign Up title */
+  text-align: center;
+  font-weight: bold;
+}
+
+/* Button to open modals */
+button {
+  background-color: #008CBA; /* Blue background for the button */
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #007B9E; /* Darker blue on hover */
+}
+
+
+
+.modal2-content {
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.close:hover {
+  color: #ff0000;
+}
+
+/* Button styling */
+button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 16px;
+  display: flex;
+}
+
+button:hover {
+  background-color: #030d17;
+}
+/* General Styles for the Help Support Section */
+.help-support-section {
+  background-color: #f9f9f9;
+  padding: 50px 20px;
+  font-family: Arial, sans-serif;
+}
+
+.help-support-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.help-support-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+/* FAQ Section */
+.faq-section {
+  background-color: #fff;
+  padding: 20px;
+  margin-bottom: 30px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.faq-section h3 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.faq-item {
+  text-align: left;
+  margin-bottom: 15px;
+}
+
+.faq-item h4 {
+  font-size: 1.2rem;
+  color: #007bff;
+  cursor: pointer;
+}
+
+.faq-item .faq-answer {
+  display: none; /* Initially hide the FAQ answers */
+}
+
+.faq-item p {
+  font-size: 1rem;
+  margin-top: 5px;
+  color: #555;
+}
+
+/* Contact Form Section */
+.contact-form-section {
+  background-color: #fff;
+  padding: 20px;
+  margin-bottom: 30px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form-section h3 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.contact-form-section form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.contact-form-section label {
+  margin-top: 10px;
+  font-size: 1rem;
+}
+
+.contact-form-section input, .contact-form-section textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.contact-form-section button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  margin-top: 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.contact-form-section button:hover {
+  background-color: #0056b3;
+}
+
+/* Help Articles Section */
+.help-articles-section {
+  background-color: #fff;
+  padding: 20px;
+  margin-bottom: 30px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.help-articles-section h3 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.help-articles-section ul {
+  list-style: none;
+  padding: 0;
+  font-size: 1rem;
+  color: #555;
+}
+
+.help-articles-section ul li {
+  margin-bottom: 10px;
+}
+
+.help-articles-section ul li a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.help-articles-section ul li a:hover {
+  text-decoration: underline;
+}
